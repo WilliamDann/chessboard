@@ -1,0 +1,23 @@
+.move-tree {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.variation {
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid
+    color-mix(in srgb, currentColor 25%, transparent);
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.comment {
+  font-weight: normal;
+  white-space: pre-wrap;
+}
+
+.mainline {
+  font-weight: bold;
+  max-width: 50rem;
+}

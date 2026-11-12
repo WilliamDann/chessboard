@@ -1,0 +1,47 @@
+.move {
+  padding: 0.125rem 0.25rem;
+
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 1px solid #ebebeb;
+
+  background-color: #f7f7f7;
+  transition: background-color 120ms ease;
+}
+
+.move.selected {
+  background-color: #93c5fd;
+}
+.move.selected:hover {
+  background-color: #93c5fd;
+}
+
+.move.selected:active {
+  background-color: #93c5fd;
+}
+
+.move:hover {
+  background-color: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.move:active {
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.nag {
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.nag.good {
+  color: green; 
+}
+.nag.bad {
+  color: red;
+}
+.nag.interesting {
+  color: teal;
+}
+.nag.dubious {
+  color: orange;
+}

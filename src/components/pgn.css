@@ -1,0 +1,27 @@
+.chess-pgn-editor {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.chess-pgn-editor textarea,
+.chess-pgn-editor input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  font-family: monospace;
+}
+
+.chess-pgn-editor textarea {
+  resize: vertical;
+}
+
+.chess-pgn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chess-pgn-actions button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

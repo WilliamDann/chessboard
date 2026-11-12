@@ -1,0 +1,68 @@
+@import "@lichess-org/chessground/assets/chessground.base.css";
+@import "@lichess-org/chessground/assets/chessground.brown.css";
+@import "@lichess-org/chessground/assets/chessground.cburnett.css";
+
+.chessboard {
+  --coord-size: 2rem;
+  --coord-gap: 1rem;
+  --coord-gutter: calc(var(--coord-size) + var(--coord-gap));
+
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: var(--coord-gutter);
+  padding-bottom: var(--coord-gutter);
+}
+
+.chessboard-ground {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.chessboard-ground coords.ranks.left {
+  top: 0;
+  right: auto;
+  left: calc(-1 * var(--coord-gutter));
+  width: var(--coord-size);
+  height: 100%;
+  text-align: center;
+}
+
+.chessboard-ground coords.files {
+  bottom: calc(-1 * var(--coord-gutter));
+  left: 0;
+  width: 100%;
+  height: var(--coord-size);
+}
+
+.chessboard-ground coords coord {
+  color: currentColor !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.chessboard-flip {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  width: var(--coord-size);
+  height: var(--coord-size);
+  padding: 0;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.chessboard-flip:hover {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.chessboard-flip:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

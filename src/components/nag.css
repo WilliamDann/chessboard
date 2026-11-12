@@ -1,0 +1,95 @@
+.nag-editor {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.nag-editor h2,
+.nag-editor h3 {
+  margin: 0 0 0.5rem;
+}
+
+.nag-editor-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nag-editor-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.nag-editor-groups > div {
+  min-width: 0;
+}
+
+.nag-editor-groups .nag-editor-buttons {
+  display: grid;
+  gap: 0.125rem;
+}
+
+.nag-editor-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nag-editor-groups .nag-editor-button {
+  width: 100%;
+  border-color: transparent;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.nag-editor-button:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.nag-editor-button[aria-pressed="true"] {
+  background: color-mix(in srgb, #93c5fd 60%, transparent);
+  border-color: #93c5fd;
+}
+
+.nag-editor-button .nag {
+  padding: 0;
+}
+
+.nag-editor-symbol {
+  flex: none;
+  min-width: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nag-editor-code {
+  font-size: 0.75em;
+  opacity: 0.7;
+}
+
+.nag-editor input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+.nag-editor-results {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+.nag-editor-results .nag-editor-button {
+  justify-content: flex-start;
+  text-align: left;
+}

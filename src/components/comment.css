@@ -1,0 +1,19 @@
+.comment-editor {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.comment-editor textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  resize: vertical;
+  font: inherit;
+}
+
+.comment-editor button {
+  justify-self: start;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.chess-header-editor {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.editor-row-panel:has(.chess-header-editor) {
+  max-width: 40rem;
+}
+
+.chess-header-editor h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.chess-header-list {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chess-header-list form {
+  display: grid;
+  grid-template-columns: minmax(5rem, 7rem) minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.chess-header-list label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chess-header-editor input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0.375rem;
+  font: inherit;
+}
+
+.chess-header-editor button {
+  padding: 0.375rem;
+  cursor: pointer;
+}
+
+.chess-header-list button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

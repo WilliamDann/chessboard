@@ -1,0 +1,14 @@
+.variation-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.variation-editor-actions button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.variation-editor-actions button:disabled {
+  cursor: not-allowed;
+}

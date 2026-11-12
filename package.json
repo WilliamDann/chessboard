@@ -1,0 +1,26 @@
+{
+  "name": "chessboard",
+  "version": "1.0.0",
+  "description": "Chessboard componoent using Chessground",
+  "license": "ISC",
+  "author": "William Dann",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@lichess-org/chessground": "^10.2.0",
+    "chessops": "^0.15.1",
+    "lucide-react": "^1.48.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}

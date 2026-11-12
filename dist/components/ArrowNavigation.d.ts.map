@@ -1,0 +1,1 @@
+{"version":3,"file":"ArrowNavigation.d.ts","sourceRoot":"","sources":["../../src/components/ArrowNavigation.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAiB,SAAS,EAAE,MAAM,OAAO,CAAC;AAKtD,KAAK,KAAK,GAAG;IACX,QAAQ,EAAE,SAAS,CAAC;IACpB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB,CAAC;AAEF,MAAM,CAAC,OAAO,UAAU,eAAe,CAAC,EAAE,QAAQ,EAAE,SAAS,EAAE,EAAE,KAAK,+BAwErE"}

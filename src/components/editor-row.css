@@ -1,0 +1,81 @@
+.editor-row {
+  position: relative;
+  anchor-name: --editor-row;
+}
+
+.editor-row-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.editor-row-icons div {
+  padding: 0.5rem;
+
+}
+
+.editor-row-icons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.editor-row-icons button.selected {
+  background-color: #e6e6e6;
+}
+
+.editor-row-panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-y: auto;
+  max-height: calc(100dvh - 1rem);
+  z-index: 10;
+  box-sizing: border-box;
+  width: 85%;
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  background: color-mix(in srgb, Canvas 95%, transparent);
+  color: CanvasText;
+  box-shadow: 0 0.5rem 1.5rem color-mix(in srgb, black 20%, transparent);
+}
+
+.editor-row.panel-above .editor-row-panel {
+  top: auto;
+  bottom: 100%;
+}
+
+@supports (position-try-order: most-height) {
+  .editor-row-panel {
+    position: fixed;
+    position-anchor: --editor-row;
+    position-area: bottom;
+    position-try-fallbacks: flip-block;
+    position-try-order: most-height;
+    inset: auto;
+    justify-self: anchor-center;
+    transform: none;
+    width: calc(anchor-size(width) * 0.85);
+    max-height: max(0px, calc(100% - 0.5rem));
+  }
+
+  .editor-row.panel-above .editor-row-panel {
+    inset: auto;
+    position-area: top;
+  }
+}
+
+.editor-row-panel .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
